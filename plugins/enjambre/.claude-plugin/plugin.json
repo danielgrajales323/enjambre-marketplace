@@ -1,0 +1,12 @@
+{
+  "name": "enjambre",
+  "version": "0.1.0",
+  "description": "Enjambre de prueba e iteración para cualquier proyecto: la IA propone, el código decide. Exploradores, verificador independiente, jueces a ciegas en orden doble, libro de gasto, set reservado ilegible y guardias que no dependen del prompt.",
+  "author": { "name": "Daniel Grajales" },
+  "license": "MIT",
+  "repository": "https://github.com/danielgrajales323/enjambre-marketplace",
+  "keywords": ["testing", "agents", "quality", "oracles", "judges"],
+  "skills": ["./skills/"],
+  "hooks": "./hooks/hooks.json",
+  "workflows": ["./workflows/"]
+}

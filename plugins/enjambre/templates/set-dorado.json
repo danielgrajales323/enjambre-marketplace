@@ -1,0 +1,5 @@
+{
+  "_que": "Set dorado del enjambre: casos que alguna vez fallaron y se arreglaron. Corren SIEMPRE al principio de cada ciclo, completo o parcial; un fallo es una REGRESIÓN y la medición no cuenta como mejora. Sólo ids del set de TRABAJO (origen 'trabajo') o casos derivados ya saneados (origen 'derivado', prefijo 'dorado_'); nunca del reservado. Un caso nunca se saca. Se suma con agregarAlSetDorado (lib/setDorado.mjs) y se commitea.",
+  "version": 1,
+  "casos": []
+}

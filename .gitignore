@@ -1,0 +1,19 @@
+# Dependencias (el plugin no tiene ninguna: sólo built-ins de Node)
+node_modules/
+
+# Resultados de `claude plugin eval` y pruebas locales
+plugins/enjambre/evals/results/
+*.log
+
+# Copias de respaldo que deja /enjambre:init con --force
+*.bak
+*.bak.*
+
+# Grafo de código local (graphify) y temporales del sistema
+graphify-out/
+.DS_Store
+Thumbs.db
+
+# Si alguien instala el enjambre EN este repo para probarlo, no se versiona
+.enjambre/
+.claude/settings.local.json

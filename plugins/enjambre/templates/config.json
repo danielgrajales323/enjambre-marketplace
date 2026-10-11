@@ -1,0 +1,58 @@
+{
+  "_que": "Configuración del enjambre para ESTE proyecto. La escribe /enjambre:init y la edita el dueño a mano; ningún agente la toca (está en `protegidos`). Las guardias del plugin la leen en cada herramienta: si falta `.enjambre/`, no actúan; si este archivo está roto, bloquean todo hasta que se arregle.",
+  "version": 1,
+  "proyecto": "mi-proyecto",
+  "mapa": {
+    "herramienta": "graphify",
+    "subcomandos": ["query", "explain", "path"],
+    "ventanaMinutos": 15,
+    "rutasDeCodigo": ["src", "scripts", "lib", "app"],
+    "extensiones": ["ts", "tsx", "js", "jsx", "mjs", "cjs", "py", "go", "rs", "sql"]
+  },
+  "red": {
+    "hostsPermitidos": ["localhost", "127.0.0.1", "[::1]", "*.localhost", "*.test"],
+    "hostsProhibidos": []
+  },
+  "comandosProhibidos": [
+    "\\bgit\\b[^\\n]*\\bpush\\b[^\\n]*(\\s--force\\b|\\s--force-with-lease\\b|\\s-f\\b|\\s\\+\\S)",
+    "\\bgit\\b[^\\n]*\\breset\\b[^\\n]*--hard\\b",
+    "\\brm\\b(?=[^\\n]*(\\s-[a-z]*r[a-z]*\\b|\\s--recursive\\b))(?=[^\\n]*(\\s-[a-z]*f[a-z]*\\b|\\s--force\\b))",
+    "Remove-Item\\b[^\\n]*-Recurse",
+    "\\bsupabase\\b[^\\n]*\\b(functions\\s+deploy|secrets\\s+(set|unset)|db\\s+(reset|push))\\b",
+    "\\b(DROP|TRUNCATE)\\s+(TABLE|SCHEMA|DATABASE)\\b"
+  ],
+  "reservado": {
+    "ruta": ".enjambre/reservado",
+    "lectoresAutorizados": [".enjambre/corrida-final.mjs"]
+  },
+  "gasto": {
+    "libro": ".enjambre/gastos.json",
+    "carpetaCanonico": "enjambre",
+    "topeUsd": 30,
+    "avisoUsd": 20,
+    "reservaFinalUsd": 5,
+    "margenUsd": 0.5,
+    "scriptsQueGastan": ["ciclo", "corrida-final", "medir"]
+  },
+  "dorado": {
+    "archivo": ".enjambre/set-dorado.json",
+    "prefijoDerivado": "dorado_"
+  },
+  "protegidos": [".enjambre/config.json", ".enjambre/gastos.json", ".enjambre/manifest.json", ".claude/settings.json"],
+  "secretos": [".env", ".env.*"],
+  "modelos": {
+    "supervisor": "inherit",
+    "cartografo": "sonnet",
+    "generador": "sonnet",
+    "explorador": "sonnet",
+    "verificador": "opus",
+    "triage": "haiku",
+    "juez": "haiku",
+    "comparador": "haiku",
+    "builder": "sonnet",
+    "auditor": "opus"
+  },
+  "seguridad": {
+    "autorizacionDelDuenio": null
+  }
+}

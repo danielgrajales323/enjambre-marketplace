@@ -1,0 +1,15 @@
+{
+  "name": "enjambre-marketplace",
+  "owner": { "name": "Daniel Grajales" },
+  "metadata": { "description": "Marketplace del plugin enjambre para Claude Code: un enjambre de prueba e iteración donde la IA propone y el código decide." },
+  "plugins": [
+    {
+      "name": "enjambre",
+      "source": "./plugins/enjambre",
+      "description": "Enjambre de prueba e iteración: exploradores, verificador independiente, jueces a ciegas en orden doble, libro de gasto, set reservado ilegible y guardias por hook.",
+      "version": "0.1.0",
+      "category": "testing",
+      "tags": ["testing", "agents", "quality", "oracles", "judges"]
+    }
+  ]
+}

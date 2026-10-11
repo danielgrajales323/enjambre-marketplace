@@ -1,0 +1,4 @@
+{
+  "_regla": "Libro de gastos del enjambre (ESPEJO commiteado). Sólo corridas: los topes viven en .enjambre/config.json. Borrarlo o restaurarlo con git no baja el acumulado: el canónico del directorio común de git lo sigue contando.",
+  "corridas": []
+}

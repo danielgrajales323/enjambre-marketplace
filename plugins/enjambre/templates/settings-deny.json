@@ -1,0 +1,30 @@
+{
+  "_que": "Reglas de permiso que /enjambre:init FUSIONA en .claude/settings.json del proyecto (permissions.deny). El plugin no puede distribuir permisos; por eso se escriben en el proyecto. Las guardias (hooks) las refuerzan. Este archivo no se copia a .enjambre/.",
+  "deny": [
+    "Read(./.env)",
+    "Read(./.env.*)",
+    "Edit(./.env)",
+    "Write(./.env)",
+    "Read(./.enjambre/reservado/**)",
+    "Edit(./.enjambre/reservado/**)",
+    "Edit(./.enjambre/config.json)",
+    "Write(./.enjambre/config.json)",
+    "Edit(./.enjambre/gastos.json)",
+    "Write(./.enjambre/gastos.json)",
+    "Bash(rm *.enjambre*)",
+    "Bash(mv *.enjambre*)",
+    "Bash(git rm *.enjambre*)",
+    "Bash(git mv *.enjambre*)",
+    "PowerShell(Remove-Item *.enjambre*)",
+    "PowerShell(Rename-Item *.enjambre*)",
+    "PowerShell(Move-Item *.enjambre*)",
+    "Bash(git push --force*)",
+    "Bash(git push * --force*)",
+    "Bash(git push -f*)",
+    "Bash(git reset --hard*)",
+    "Bash(rm -rf *)",
+    "PowerShell(git push --force*)",
+    "PowerShell(git reset --hard*)",
+    "PowerShell(Remove-Item * -Recurse*)"
+  ]
+}
